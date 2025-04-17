@@ -1,5 +1,5 @@
 {
-  "homepage": ".",
+  "homepage": "https://SvitlanaRamanauskas.github.io/TODO_app_Portfolio/",
   "name": "react-typescript-starter-pack",
   "version": "0.1.0",
   "dependencies": {
@@ -40,7 +40,7 @@
   },
   "scripts": {
     "start": "mate-scripts start -l",
-    "build": "mate-scripts build",
+    "build": "vite build",
     "style-format": "npx stylelint 'src/**/*.scss' --fix --allow-empty-input",
     "lint-js": "mate-scripts lint -j",
     "lint-css": "mate-scripts lint -s",
@@ -49,7 +49,7 @@
     "update": "mate-scripts update",
     "postinstall": "npm run update && cypress verify",
     "predeploy": "npm run build",
-    "deploy": "mate-scripts deploy"
+    "deploy": "gh-pages -d dist"
   },
   "browserslist": {
     "production": [
