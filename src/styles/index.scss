@@ -24,6 +24,11 @@ body {
   pointer-events: none;
 }
 
+input:focus {
+  outline: none;
+  box-shadow: none; 
+}
+
 @import "./todoapp";
 @import "./todo";
 @import "./filter";
